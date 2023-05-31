@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JINNNs cinema</title>
+<!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&display=swap" rel="stylesheet">
+<!-- style -->
+<link rel="stylesheet" href="./reset.css">
+<link rel="stylesheet" href="./style.css">
+<!-- script -->    
+<script type="text/javascript"src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="title"> JINNNs CINEMA</h1>
+            <form class="searching">
+                <label> 영화 검색 </label>
+                <input id="movieSearch" type="search" placeholder=" 영화제목을 입력해주세요">
+                <button class="search-text" onclick="getMovies">
+                    search 
+                </button>
+            </form>
+    </div>
+    <div class="main">
+        <div class="cards-list" id="card-wrap" >
+            <div class="movie" >
+                <img src="" alt=""/>
+                <h2 class="movieName"> 영화제목 </h2>
+                <p class="overview"> </p>
+                <p class="movieRate">  </p>
+            </div>
+        </div>
+    </div>
+</body>                                             
+</html>
+
