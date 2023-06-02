@@ -11,7 +11,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', opti
   .then((response) => {
     document.querySelector('.movie').remove();
     response.results.forEach((movie) => {
-      let template = `<div class="movie">
+      let template = `<div class="movie" onclick="alert(${movie.id})">
                       <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="" />
                       <h2 class="movieName">${movie.title}</h2>
                       <p class="overview">${movie.overview}</p>
